@@ -13,9 +13,11 @@
 		9CF165F5241A5AD300719ED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF165F3241A5AD300719ED1 /* Main.storyboard */; };
 		9CF165F7241A5AD400719ED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF165F6241A5AD400719ED1 /* Assets.xcassets */; };
 		9CF165FA241A5AD400719ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF165F8241A5AD400719ED1 /* LaunchScreen.storyboard */; };
+		C40C1E3CAE927355D3FCA9D8 /* libPods-ExpandableDynamicTableViewCellExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F50F4F62A51E234AA0DAC0CA /* libPods-ExpandableDynamicTableViewCellExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1479B392357E8E54333FC952 /* Pods-ExpandableDynamicTableViewCellExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandableDynamicTableViewCellExample.debug.xcconfig"; path = "Target Support Files/Pods-ExpandableDynamicTableViewCellExample/Pods-ExpandableDynamicTableViewCellExample.debug.xcconfig"; sourceTree = "<group>"; };
 		9CF165EA241A5AD300719ED1 /* ExpandableDynamicTableViewCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableDynamicTableViewCellExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF165ED241A5AD300719ED1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF165EF241A5AD300719ED1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		9CF165F6241A5AD400719ED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CF165F9241A5AD400719ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CF165FB241A5AD400719ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE01142A03ED851817B5DFC3 /* Pods-ExpandableDynamicTableViewCellExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandableDynamicTableViewCellExample.release.xcconfig"; path = "Target Support Files/Pods-ExpandableDynamicTableViewCellExample/Pods-ExpandableDynamicTableViewCellExample.release.xcconfig"; sourceTree = "<group>"; };
+		F50F4F62A51E234AA0DAC0CA /* libPods-ExpandableDynamicTableViewCellExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExpandableDynamicTableViewCellExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40C1E3CAE927355D3FCA9D8 /* libPods-ExpandableDynamicTableViewCellExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		176A6DCD94354941B58B852A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1479B392357E8E54333FC952 /* Pods-ExpandableDynamicTableViewCellExample.debug.xcconfig */,
+				AE01142A03ED851817B5DFC3 /* Pods-ExpandableDynamicTableViewCellExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		440FE860267308C04A94A844 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F50F4F62A51E234AA0DAC0CA /* libPods-ExpandableDynamicTableViewCellExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9CF165E1241A5AD300719ED1 = {
 			isa = PBXGroup;
 			children = (
 				9CF165EC241A5AD300719ED1 /* ExpandableDynamicTableViewCellExample */,
 				9CF165EB241A5AD300719ED1 /* Products */,
+				176A6DCD94354941B58B852A /* Pods */,
+				440FE860267308C04A94A844 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CF165FE241A5AD400719ED1 /* Build configuration list for PBXNativeTarget "ExpandableDynamicTableViewCellExample" */;
 			buildPhases = (
+				903344F7CD77C6845A8CAD64 /* [CP] Check Pods Manifest.lock */,
 				9CF165E6241A5AD300719ED1 /* Sources */,
 				9CF165E7241A5AD300719ED1 /* Frameworks */,
 				9CF165E8241A5AD300719ED1 /* Resources */,
@@ -132,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		903344F7CD77C6845A8CAD64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExpandableDynamicTableViewCellExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CF165E6241A5AD300719ED1 /* Sources */ = {
@@ -282,6 +332,7 @@
 		};
 		9CF165FF241A5AD400719ED1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1479B392357E8E54333FC952 /* Pods-ExpandableDynamicTableViewCellExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +351,7 @@
 		};
 		9CF16600241A5AD400719ED1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE01142A03ED851817B5DFC3 /* Pods-ExpandableDynamicTableViewCellExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
